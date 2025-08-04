@@ -1,0 +1,47 @@
+# Nmap 7.95 scan initiated Mon Aug  4 11:51:18 2025 as: /usr/lib/nmap/nmap -sS -oN range 10.0.2.15/24 sacn
+Failed to resolve "sacn".
+Failed to resolve "sacn".
+Nmap scan report for 10.0.2.2
+Host is up (0.0072s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+1027/tcp open  IIS
+1042/tcp open  afrog
+1043/tcp open  boinc
+7778/tcp open  interwise
+MAC Address: 52:54:00:12:35:02 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.3
+Host is up (0.0073s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+1027/tcp open  IIS
+1042/tcp open  afrog
+1043/tcp open  boinc
+7778/tcp open  interwise
+MAC Address: 52:54:00:12:35:03 (QEMU virtual NIC)
+
+Nmap scan report for 10.0.2.4
+Host is up (0.0074s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+1027/tcp open  IIS
+1042/tcp open  afrog
+1043/tcp open  boinc
+7778/tcp open  interwise
+MAC Address: 52:54:00:12:35:04 (QEMU virtual NIC)
+
+Failed to resolve "sacn".
+Nmap scan report for 10.0.2.15
+Host is up (0.0000030s latency).
+All 1000 scanned ports on 10.0.2.15 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Failed to resolve "sacn".
+# Nmap done at Mon Aug  4 11:51:30 2025 -- 256 IP addresses (4 hosts up) scanned in 11.66 seconds

@@ -1,0 +1,218 @@
+# Nmap 7.95 scan initiated Mon Aug  4 12:19:38 2025 as: /usr/lib/nmap/nmap -A -oN foundedip1 10.0.2.3
+Nmap scan report for 10.0.2.3
+Host is up (0.0012s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+1027/tcp open  msrpc         Microsoft Windows RPC
+1042/tcp open  afrog?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Vary: Origin
+|     Content-Security-Policy: default-src 'none'
+|     Cross-Origin-Resource-Policy: cross-origin
+|     Origin-Agent-Cluster: ?1
+|     Referrer-Policy: no-referrer
+|     Strict-Transport-Security: max-age=15552000; includeSubDomains
+|     X-Content-Type-Options: nosniff
+|     X-DNS-Prefetch-Control: off
+|     X-Download-Options: noopen
+|     X-Frame-Options: SAMEORIGIN
+|     X-Permitted-Cross-Domain-Policies: none
+|     X-XSS-Protection: 0
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 139
+|     Date: Mon, 04 Aug 2025 16:19:55 GMT
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8">
+|     <title>Error</title>
+|     </head>
+|     <body>
+|     <pre>Cannot GET /</pre>
+|     </body>
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.1 204 No Content
+|     Vary: Origin, Access-Control-Request-Headers
+|     Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE
+|     Content-Length: 0
+|     Date: Mon, 04 Aug 2025 16:19:55 GMT
+|     Connection: close
+|   RTSPRequest: 
+|     HTTP/1.1 204 No Content
+|     Vary: Origin, Access-Control-Request-Headers
+|     Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE
+|     Content-Length: 0
+|     Date: Mon, 04 Aug 2025 16:19:56 GMT
+|_    Connection: close
+1043/tcp open  ssl/boinc?
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: 
+| Subject Alternative Name: URI:http://example.org/webid#me
+| Not valid before: 2025-08-04T08:42:29
+|_Not valid after:  2026-08-04T08:42:29
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Vary: Origin
+|     Content-Security-Policy: default-src 'self' blob: 127.0.0.1:*;script-src 'self' 'unsafe-inline';block-all-mixed-content;style-src 'self';connect-src 'self' ws: wss: blob: 127.0.0.1:* api.giphy.com;worker-src 'self' blob: 127.0.0.1:*;img-src 'self' data: blob: 127.0.0.1:*;base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none'
+|     Cross-Origin-Resource-Policy: cross-origin
+|     Origin-Agent-Cluster: ?1
+|     Referrer-Policy: no-referrer
+|     Strict-Transport-Security: max-age=15552000; includeSubDomains
+|     X-Content-Type-Options: nosniff
+|     X-DNS-Prefetch-Control: off
+|     X-Download-Options: noopen
+|     X-Frame-Options: SAMEORIGIN
+|     X-Permitted-Cross-Domain-Policies: none
+|     X-XSS-Protection: 0
+|     Date: Mon, 04 Aug 2025 16:20:07 GMT
+|     Connection: close
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Vary: Origin
+|     Content-Security-Policy: default-src 'none'
+|     Cross-Origin-Resource-Policy: cross-origin
+|     Origin-Agent-Cluster: ?1
+|     Referrer-Policy: no-referrer
+|     Strict-Transport-Security: max-age=15552000; includeSubDomains
+|     X-Content-Type-Options: nosniff
+|     X-DNS-Prefetch-Control: off
+|     X-Download-Options: noopen
+|     X-Frame-Options: SAMEORIGIN
+|     X-Permitted-Cross-Domain-Policies: none
+|     X-XSS-Protection: 0
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 139
+|     Date: Mon, 04 Aug 2025 16:20:07 GMT
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8">
+|     <title>Error</title>
+|     </head>
+|     <body>
+|     <pre>Cannot GET /</pre>
+|     </body>
+|     </html>
+|   HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 204 No Content
+|     Vary: Origin, Access-Control-Request-Headers
+|     Access-Control-Allow-Methods: GET,HEAD,PUT,PATCH,POST,DELETE
+|     Content-Length: 0
+|     Date: Mon, 04 Aug 2025 16:20:07 GMT
+|_    Connection: close
+| tls-alpn: 
+|_  http/1.1
+7778/tcp open  interwise?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1042-TCP:V=7.95%I=7%D=8/4%Time=6890DDAB%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,2AE,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\r\nCon
+SF:tent-Security-Policy:\x20default-src\x20'none'\r\nCross-Origin-Resource
+SF:-Policy:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\nReferrer-Po
+SF:licy:\x20no-referrer\r\nStrict-Transport-Security:\x20max-age=15552000;
+SF:\x20includeSubDomains\r\nX-Content-Type-Options:\x20nosniff\r\nX-DNS-Pr
+SF:efetch-Control:\x20off\r\nX-Download-Options:\x20noopen\r\nX-Frame-Opti
+SF:ons:\x20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nX-X
+SF:SS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\n
+SF:Content-Length:\x20139\r\nDate:\x20Mon,\x2004\x20Aug\x202025\x2016:19:5
+SF:5\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html\x20la
+SF:ng=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<title>Error</title>\n
+SF:</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n</body>\n</html>\n")%r(
+SF:HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Origin,\x
+SF:20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:\x20GE
+SF:T,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20Mon,\x
+SF:2004\x20Aug\x202025\x2016:19:55\x20GMT\r\nConnection:\x20close\r\n\r\n"
+SF:)%r(RTSPRequest,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Origi
+SF:n,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:\x
+SF:20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20Mo
+SF:n,\x2004\x20Aug\x202025\x2016:19:56\x20GMT\r\nConnection:\x20close\r\n\
+SF:r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\
+SF:x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x
+SF:20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSStatusRequestTCP,2F,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(H
+SF:elp,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\
+SF:r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(TerminalServerCookie,2F,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(TLSSessionReq,2F,"HT
+SF:TP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1043-TCP:V=7.95%T=SSL%I=7%D=8/4%Time=6890DDB7%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,2AE,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\
+SF:r\nContent-Security-Policy:\x20default-src\x20'none'\r\nCross-Origin-Re
+SF:source-Policy:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\nRefer
+SF:rer-Policy:\x20no-referrer\r\nStrict-Transport-Security:\x20max-age=155
+SF:52000;\x20includeSubDomains\r\nX-Content-Type-Options:\x20nosniff\r\nX-
+SF:DNS-Prefetch-Control:\x20off\r\nX-Download-Options:\x20noopen\r\nX-Fram
+SF:e-Options:\x20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x20none\
+SF:r\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charset=utf
+SF:-8\r\nContent-Length:\x20139\r\nDate:\x20Mon,\x2004\x20Aug\x202025\x201
+SF:6:20:07\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html
+SF:\x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<title>Error</ti
+SF:tle>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n</body>\n</html>\
+SF:n")%r(HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Ori
+SF:gin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:
+SF:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20
+SF:Mon,\x2004\x20Aug\x202025\x2016:20:07\x20GMT\r\nConnection:\x20close\r\
+SF:n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x2
+SF:0Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Meth
+SF:ods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:
+SF:\x20Mon,\x2004\x20Aug\x202025\x2016:20:07\x20GMT\r\nConnection:\x20clos
+SF:e\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\nConnection:\x20close\r\n\r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x204
+SF:00\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(TerminalServer
+SF:Cookie,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r
+SF:\n\r\n")%r(TLSSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConn
+SF:ection:\x20close\r\n\r\n")%r(FourOhFourRequest,34A,"HTTP/1\.1\x20404\x2
+SF:0Not\x20Found\r\nVary:\x20Origin\r\nContent-Security-Policy:\x20default
+SF:-src\x20'self'\x20blob:\x20127\.0\.0\.1:\*;script-src\x20'self'\x20'uns
+SF:afe-inline';block-all-mixed-content;style-src\x20'self';connect-src\x20
+SF:'self'\x20ws:\x20wss:\x20blob:\x20127\.0\.0\.1:\*\x20api\.giphy\.com;wo
+SF:rker-src\x20'self'\x20blob:\x20127\.0\.0\.1:\*;img-src\x20'self'\x20dat
+SF:a:\x20blob:\x20127\.0\.0\.1:\*;base-uri\x20'self';font-src\x20'self'\x2
+SF:0https:\x20data:;form-action\x20'self';frame-ancestors\x20'self';object
+SF:-src\x20'none';script-src-attr\x20'none'\r\nCross-Origin-Resource-Polic
+SF:y:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\nReferrer-Policy:\
+SF:x20no-referrer\r\nStrict-Transport-Security:\x20max-age=15552000;\x20in
+SF:cludeSubDomains\r\nX-Content-Type-Options:\x20nosniff\r\nX-DNS-Prefetch
+SF:-Control:\x20off\r\nX-Download-Options:\x20noopen\r\nX-Frame-Options:\x
+SF:20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nX-XSS-Pro
+SF:tection:\x200\r\nDate:\x20Mon,\x2004\x20Aug\x202025\x2016:20:07\x20GMT\
+SF:r\nConnection:\x20close\r\n\r\n");
+MAC Address: 52:54:00:12:35:03 (QEMU virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP adapter|general purpose|bridge|printer
+Running (JUST GUESSING): AT&T embedded (98%), QEMU (96%), Oracle Virtualbox (96%), Slirp (96%), Samsung embedded (88%)
+OS CPE: cpe:/a:qemu:qemu cpe:/o:oracle:virtualbox cpe:/a:danny_gasparovski:slirp cpe:/h:samsung:clp-315w
+Aggressive OS guesses: AT&T BGW210 voice gateway (98%), QEMU user mode network gateway (96%), Oracle Virtualbox Slirp NAT bridge (96%), Samsung CLP-315W printer (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2025-08-04T16:20:16
+|_  start_date: N/A
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.21 ms 10.0.2.3
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug  4 12:20:20 2025 -- 1 IP address (1 host up) scanned in 41.99 seconds

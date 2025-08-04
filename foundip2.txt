@@ -1,0 +1,149 @@
+# Nmap 7.95 scan initiated Mon Aug  4 12:24:12 2025 as: /usr/lib/nmap/nmap -p- -sV -oN foundip2.txt 10.0.2.4
+Nmap scan report for 10.0.2.4
+Host is up (0.012s latency).
+Not shown: 65506 filtered tcp ports (no-response)
+PORT      STATE SERVICE        VERSION
+135/tcp   open  msrpc          Microsoft Windows RPC
+445/tcp   open  microsoft-ds?
+1027/tcp  open  msrpc          Microsoft Windows RPC
+1042/tcp  open  afrog?
+1043/tcp  open  ssl/boinc?
+5040/tcp  open  unknown
+5354/tcp  open  mdnsresponder?
+7778/tcp  open  interwise?
+9012/tcp  open  ssl/websocket  WebSocket++ 0.8.2
+9013/tcp  open  websocket      WebSocket++ 0.8.2
+9014/tcp  open  websocket      WebSocket++ 0.8.1
+11001/tcp open  metasys?
+13010/tcp open  tcpwrapped
+13030/tcp open  unknown
+13031/tcp open  unknown
+13032/tcp open  unknown
+17532/tcp open  tcpwrapped
+17945/tcp open  tcpwrapped
+19293/tcp open  ssl/unknown
+22112/tcp open  unknown
+24830/tcp open  unknown
+27015/tcp open  unknown
+27339/tcp open  http           Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49664/tcp open  msrpc          Microsoft Windows RPC
+49665/tcp open  msrpc          Microsoft Windows RPC
+49666/tcp open  msrpc          Microsoft Windows RPC
+49667/tcp open  msrpc          Microsoft Windows RPC
+49668/tcp open  msrpc          Microsoft Windows RPC
+50923/tcp open  unknown
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1042-TCP:V=7.95%I=7%D=8/4%Time=6890DF2E%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,2AE,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\r\nCon
+SF:tent-Security-Policy:\x20default-src\x20'none'\r\nCross-Origin-Resource
+SF:-Policy:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\nReferrer-Po
+SF:licy:\x20no-referrer\r\nStrict-Transport-Security:\x20max-age=15552000;
+SF:\x20includeSubDomains\r\nX-Content-Type-Options:\x20nosniff\r\nX-DNS-Pr
+SF:efetch-Control:\x20off\r\nX-Download-Options:\x20noopen\r\nX-Frame-Opti
+SF:ons:\x20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x20none\r\nX-X
+SF:SS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\n
+SF:Content-Length:\x20139\r\nDate:\x20Mon,\x2004\x20Aug\x202025\x2016:26:2
+SF:2\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html\x20la
+SF:ng=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<title>Error</title>\n
+SF:</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n</body>\n</html>\n")%r(
+SF:HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Origin,\x
+SF:20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:\x20GE
+SF:T,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20Mon,\x
+SF:2004\x20Aug\x202025\x2016:26:23\x20GMT\r\nConnection:\x20close\r\n\r\n"
+SF:)%r(RTSPRequest,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Origi
+SF:n,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:\x
+SF:20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20Mo
+SF:n,\x2004\x20Aug\x202025\x2016:26:23\x20GMT\r\nConnection:\x20close\r\n\
+SF:r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\
+SF:x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x
+SF:20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSStatusRequestTCP,2F,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(H
+SF:elp,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\
+SF:r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(TerminalServerCookie,2F,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(TLSSessionReq,2F,"HT
+SF:TP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1043-TCP:V=7.95%T=SSL%I=7%D=8/4%Time=6890DF3A%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,2AE,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\
+SF:r\nContent-Security-Policy:\x20default-src\x20'none'\r\nCross-Origin-Re
+SF:source-Policy:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\nRefer
+SF:rer-Policy:\x20no-referrer\r\nStrict-Transport-Security:\x20max-age=155
+SF:52000;\x20includeSubDomains\r\nX-Content-Type-Options:\x20nosniff\r\nX-
+SF:DNS-Prefetch-Control:\x20off\r\nX-Download-Options:\x20noopen\r\nX-Fram
+SF:e-Options:\x20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x20none\
+SF:r\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charset=utf
+SF:-8\r\nContent-Length:\x20139\r\nDate:\x20Mon,\x2004\x20Aug\x202025\x201
+SF:6:26:34\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html
+SF:\x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<title>Error</ti
+SF:tle>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n</body>\n</html>\
+SF:n")%r(HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Ori
+SF:gin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:
+SF:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20
+SF:Mon,\x2004\x20Aug\x202025\x2016:26:34\x20GMT\r\nConnection:\x20close\r\
+SF:n\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x2
+SF:0Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Meth
+SF:ods:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:
+SF:\x20Mon,\x2004\x20Aug\x202025\x2016:26:34\x20GMT\r\nConnection:\x20clos
+SF:e\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnec
+SF:tion:\x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SSLSessionReq,2F,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(F
+SF:ourOhFourRequest,34A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Orig
+SF:in\r\nContent-Security-Policy:\x20default-src\x20'self'\x20blob:\x20127
+SF:\.0\.0\.1:\*;script-src\x20'self'\x20'unsafe-inline';block-all-mixed-co
+SF:ntent;style-src\x20'self';connect-src\x20'self'\x20ws:\x20wss:\x20blob:
+SF:\x20127\.0\.0\.1:\*\x20api\.giphy\.com;worker-src\x20'self'\x20blob:\x2
+SF:0127\.0\.0\.1:\*;img-src\x20'self'\x20data:\x20blob:\x20127\.0\.0\.1:\*
+SF:;base-uri\x20'self';font-src\x20'self'\x20https:\x20data:;form-action\x
+SF:20'self';frame-ancestors\x20'self';object-src\x20'none';script-src-attr
+SF:\x20'none'\r\nCross-Origin-Resource-Policy:\x20cross-origin\r\nOrigin-A
+SF:gent-Cluster:\x20\?1\r\nReferrer-Policy:\x20no-referrer\r\nStrict-Trans
+SF:port-Security:\x20max-age=15552000;\x20includeSubDomains\r\nX-Content-T
+SF:ype-Options:\x20nosniff\r\nX-DNS-Prefetch-Control:\x20off\r\nX-Download
+SF:-Options:\x20noopen\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-Permitted-Cr
+SF:oss-Domain-Policies:\x20none\r\nX-XSS-Protection:\x200\r\nDate:\x20Mon,
+SF:\x2004\x20Aug\x202025\x2016:26:34\x20GMT\r\nConnection:\x20close\r\n\r\
+SF:n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port11001-TCP:V=7.95%I=7%D=8/4%Time=6890DFBB%P=x86_64-pc-linux-gnu%r(af
+SF:p,44,"\xac\x01\xb0\x01\x0e\0\0\x001\0\.\x004\0\.\x006\0\.\x000\0\xac\x0
+SF:1\xb0\x02\0\0\0\0\xac\x01\xb0\x03\x0c\0\0\0S\0i\0n\0g\0l\0e\0\xac\x01\x
+SF:b0\x08\n\0\0\0F\0a\0l\0s\0e\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port24830-TCP:V=7.95%I=7%D=8/4%Time=6890DF3B%P=x86_64-pc-linux-gnu%r(RT
+SF:SPRequest,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:\x200\r\n
+SF:Connection:\x20close\r\n\r\n")%r(RPCCheck,40,"HTTP/1\.1\x20403\x20Forbi
+SF:dden\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n")%r(DNSVer
+SF:sionBindReqTCP,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:\x20
+SF:0\r\nConnection:\x20close\r\n\r\n")%r(DNSStatusRequestTCP,40,"HTTP/1\.1
+SF:\x20403\x20Forbidden\r\nContent-Length:\x200\r\nConnection:\x20close\r\
+SF:n\r\n")%r(Help,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:\x20
+SF:0\r\nConnection:\x20close\r\n\r\n")%r(SSLSessionReq,40,"HTTP/1\.1\x2040
+SF:3\x20Forbidden\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\r\n"
+SF:)%r(TerminalServerCookie,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-L
+SF:ength:\x200\r\nConnection:\x20close\r\n\r\n")%r(TLSSessionReq,40,"HTTP/
+SF:1\.1\x20403\x20Forbidden\r\nContent-Length:\x200\r\nConnection:\x20clos
+SF:e\r\n\r\n")%r(Kerberos,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Len
+SF:gth:\x200\r\nConnection:\x20close\r\n\r\n")%r(SMBProgNeg,40,"HTTP/1\.1\
+SF:x20403\x20Forbidden\r\nContent-Length:\x200\r\nConnection:\x20close\r\n
+SF:\r\n")%r(X11Probe,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:\
+SF:x200\r\nConnection:\x20close\r\n\r\n")%r(FourOhFourRequest,40,"HTTP/1\.
+SF:1\x20403\x20Forbidden\r\nContent-Length:\x200\r\nConnection:\x20close\r
+SF:\n\r\n")%r(LPDString,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Lengt
+SF:h:\x200\r\nConnection:\x20close\r\n\r\n")%r(LDAPSearchReq,40,"HTTP/1\.1
+SF:\x20403\x20Forbidden\r\nContent-Length:\x200\r\nConnection:\x20close\r\
+SF:n\r\n")%r(LDAPBindReq,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Leng
+SF:th:\x200\r\nConnection:\x20close\r\n\r\n")%r(SIPOptions,40,"HTTP/1\.1\x
+SF:20403\x20Forbidden\r\nContent-Length:\x200\r\nConnection:\x20close\r\n\
+SF:r\n")%r(LANDesk-RC,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:
+SF:\x200\r\nConnection:\x20close\r\n\r\n")%r(TerminalServer,40,"HTTP/1\.1\
+SF:x20403\x20Forbidden\r\nContent-Length:\x200\r\nConnection:\x20close\r\n
+SF:\r\n")%r(NCP,40,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:\x200\
+SF:r\nConnection:\x20close\r\n\r\n");
+MAC Address: 52:54:00:12:35:04 (QEMU virtual NIC)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug  4 12:28:56 2025 -- 1 IP address (1 host up) scanned in 284.08 seconds
